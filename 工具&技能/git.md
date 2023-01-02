@@ -97,6 +97,7 @@
 
 - 生成  ssh-keygen -t rsa
 - 获取cat ~/.ssh/id_rsa.pub
+- 把公钥输入网站
 - 测试连接 ssh -T git@github.com
 
 ###  推送

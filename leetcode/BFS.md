@@ -3,6 +3,15 @@
 - 寻找最短路径，由于水波扩散特点，bfs找到的路径一定是最短路径。
 ## 例题
 - [（难）1036. 逃离大迷宫](https://leetcode.cn/problems/escape-a-large-maze/)
+
+### 多源bfs
+
+- [417. 太平洋大西洋水流问题 ](https://leetcode.cn/problems/pacific-atlantic-water-flow/)
+
+- [286. 墙与门 ](https://leetcode.cn/problems/walls-and-gates/)
+
+  
+
 ### 1.（难）与状态压缩结合，多维特殊BFS（如可以重复访问点，那么需要其他（高维）判断方法来防止循环）
 - [847.访问所有节点的最短路径](https://leetcode.cn/problems/shortest-path-visiting-all-nodes/)
   - 特殊bfs，可以重复访问节点，防止重复访问不能仅仅记录一个点是否访问过，而应记录的是，在访问过的节点相同时，是否重复去访问一个节点。

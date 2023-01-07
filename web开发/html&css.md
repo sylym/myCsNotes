@@ -29,7 +29,7 @@
   - 只能内嵌行内元素
     - 链接内不能再放链接但是（a）可以内嵌块级元素
 
-![IMG_20221227_110427](../../../AppData/Roaming/Typora/media/IMG_20221227_110427.jpg)
+![IMG_20221227_110427](../media/IMG_20221227_110427.jpg)
 
 #### 块级元素
 
@@ -40,7 +40,7 @@
   - 可以内嵌其他元素
     - 文字类元素不能内嵌块级元素，如p，h1内不能放div
 
-![IMG_20221227_110421](../../../AppData/Roaming/Typora/media/IMG_20221227_110421.jpg)
+![IMG_20221227_110421](../media/IMG_20221227_110421.jpg)
 
 #### 行内块元素
 
@@ -120,7 +120,7 @@
     - media与style相同
     - href为链接文件的地址
     - rel属性
-    - ![](../../../AppData/Roaming/Typora/media/16717852985051.jpg)
+    - ![](../media/16717852985051.jpg)
 
 - `<base>`基准位置 
 
@@ -131,8 +131,9 @@
   - 只会影响相对路径而不会影响绝对路径
   - 与超链接语法类似：`<base href="基准位置.../" target="打开方式">`
 
-- `<script>`定义/引用脚本（配合js使用）
+- `<script>`定义/引用脚本（配合js使用）（类比style）
 
+  - 行内脚本
   - 内嵌脚本：`<script type="text/javascript">脚本</script>`
   - 引用外部脚本：`<script type="text/javascript" src="js文件链接"></script>`
   - 执行
@@ -140,6 +141,7 @@
     - 延迟执行：（全部解析完再执行脚本）`<script... defer>`添加defer属性
     - 异步执行：（解析与脚本执行同时进行）添加async属性，只对引用脚本起作用
   - `<noscript>...</noscript>`浏览器不支持js时显示的内容
+  
 
 ### 标记文字的元素
 
@@ -187,7 +189,7 @@
 - `<sub>`：以下标显示
   - sup上标显示
 - `<small>`：缩小显示
-- ![Snipaste_2023-01-01_22-47-10](../../../AppData/Roaming/Typora/media/Snipaste_2023-01-01_22-47-10.png)
+- ![Snipaste_2023-01-01_22-47-10](../media/Snipaste_2023-01-01_22-47-10.png)
 
 ### 结构
 
@@ -226,7 +228,7 @@
     </dl>
     ```
 
-    ![](../../../AppData/Roaming/Typora/media/16717979251060.jpg)
+    ![](../media/16717979251060.jpg)
 
 - 可以使用css定义标记样式：list-style-type选择标记，list-style-image自定义图片
 
@@ -284,10 +286,10 @@
 
 #### 表单
 
-- 实现与用户的交互
+- 实现与用户的交互（form标签）
 
 ```
-    <form action="处理文件(如welcome.php,处理表单数据的服务器程序的url地址)" method="post" target=“_blank”>//target表示新界面打开方式，与超链接类似
+    <form action="处理文件(如welcome.php,处理表单数据的服务器程序的url地址，也可以是一个html文件地址)" method="post" target=“_blank”>//target表示新界面打开方式，与超链接类似
         题目：<input type="text" name="name"><br>//type表示变量类型，name表示名称
         ...
         <button type="submit">按钮名称</button>
@@ -556,7 +558,7 @@
 
 ## 如何使用
 
-![](../../../AppData/Roaming/Typora/media/16718747989552.jpg)
+![](../media/16718747989552.jpg)
 
 - 内联样式
   - html元素都有一个style属性，可以直接对其进行赋值
@@ -593,7 +595,7 @@
 
 - 当同一个元素指定多个选择器，就会有优先级的产生。选择器相同，则执行层叠性；选择器不同，则根据选择器权重执行
 
-![Snipaste_2022-12-30_14-20-59](../../../AppData/Roaming/Typora/media/Snipaste_2022-12-30_14-20-59.png)
+![Snipaste_2022-12-30_14-20-59](../media/Snipaste_2022-12-30_14-20-59.png)
 
 - 数字1越靠左权重越高
   - 对于复合迭代器权重相加，如body h1#myID权重为（1，0，2）
@@ -706,7 +708,7 @@
     - odd奇数even偶数
   - 还可以填入公式
     - :nth-child(n)：n从0开始每次加一（如果填入n会选择全部子元素）
-    - <img src="../../../AppData/Roaming/Typora/media/Snipaste_2023-01-01_23-22-40.png" alt="Snipaste_2023-01-01_23-22-40" style="zoom: 67%;" />
+    - <img src="../media/Snipaste_2023-01-01_23-22-40.png" alt="Snipaste_2023-01-01_23-22-40" style="zoom: 67%;" />
 - `:nth-last-child()`：逆向
 - `child`替换为`of-type`：匹配父元素下唯一指定类型的子元素
   - 如`p:first-of-child`作为父元素下第一个p元素的元素（p中的第一个）
@@ -794,7 +796,7 @@
 
 - 外边距（边框与其他元素间的空白区域）-边框-内边距（内容与边框间的空白区域）-内容
 
-![box-model](../../../AppData/Roaming/Typora/media/box-model.gif)
+![box-model](../media/box-model.gif)
 
 #### 边框
 
@@ -1520,7 +1522,7 @@
   - linear gradient线性渐变
 
     - 需要指定渐变方向（默认为从上到下）、起始颜色、结束颜色：`linear-gradient(direction, red, blue)`
-      - <img src="../../../AppData/Roaming/Typora/media/IMG_20221228_163150.jpg" alt="IMG_20221228_163150" style="zoom: 25%;" />
+      - <img src="../media/IMG_20221228_163150.jpg" alt="IMG_20221228_163150" style="zoom: 25%;" />
 
     - 也可以指定多种颜色，会在渐变中均匀分配
       - 颜色后面添加百分值，定义颜色出现的位置，如blue20%表示接近宽度的20%时显示为蓝色
@@ -1551,22 +1553,28 @@
     - 缩写transition
       - 多组之间用逗号分隔
 
-  #### 变形
+  #### 变形transform属性
+
+- 写法：`transform: translateX(100px); `（transform后面可以跟多个属性，先后顺序可能造成影响，如先旋转会改变坐标轴方向，一般把位移属性放在最前面）
 
   - 旋转
-    - rotate()平面旋转
+    - rotate()平面旋转（绕z轴垂直于平面旋转）
     - rotateX() rotateY() rotateZ() 表示沿xyz轴旋转
       - 角度单位deg
-    - rotate3D(1, 1, 1, a80deg)前三个参数表示沿不同反向的旋转分量，第四个参数表示旋转角度
+    - rotate3D(1, 1, 1, 80deg)前三个参数表示沿不同反向的旋转分量，第四个参数表示旋转角度
+    - ![Snipaste_2023-01-03_15-32-41](../media/Snipaste_2023-01-03_15-32-41.png)
   - 移动
-    - translateX() translateY()
+    - translateX() translateY() translateZ()（设置了透视才能看到z轴移动的效果）
     - translate()缩写
     - translate3D()依次写入xyz轴的数据
+    - 移动不会影响其他盒子的位置 
+    - 使用%依据的是盒子自身的大小
   - 缩放
     - scaleX() scaleY()
     - scale3D() xyz轴
-    - scale()仅一个系数，xy轴以相同比例缩放
-
+    - scale()缩写
+    - 不带单位的数字表示缩放位数
+    
   - 倾斜
     - skewX() skewY()
     - skew()
@@ -1574,10 +1582,13 @@
     - transform-origin：可以用left center right top center bottom指定顶点或者使用百分百比或长度大小来指定具体位置
   - 3d变形方式
     - transform-style：默认为flat（子元素依附父元素）preserve-3d使子元素具有自己的3d空间（可以处于空间中的不同层）
-  - 视域
+    - 属性给到父元素上
+  - 视域（透视）
+    - 只有设置了透视，才能使用3d效果
     - perspective(200px)：参数越小，视角越深（离物体越近畸变越明显），仅为目标元素定义视距
-      - perspective: 200px;与函数形式有区别，视距也会应用到子元素上
+      - perspective: 200px;与函数形式有区别，视距也会应用到子元素上（写在需要透视效果的父元素上）
     - perspective-origin设置视距变形的中心点
+    
   - backface-visibility
     - visible表示渲染元素背面
     - hidden不渲染（显示为透明）
@@ -1606,11 +1617,13 @@
 
   - 入过只有两个阶段可以不用百分号，用from和to来表示
   - 属性
-    - animation-play-state属性running和paused需要用js触发
+    - animation-play-state
+      - running和paused（开始暂停播放动画）
     - animation-name 动画名称（指定要使用的动画）
     - animation-duration持续时间
     - animation-delay开始播放前的延迟
     - animation-iteration-count播放次数
+      - infinite表示循环播放
     - animation-direction是否反向播放
       - normal（默认）正向播放
       - reverse反向播放
@@ -1619,10 +1632,12 @@
     - animation-timing-function速度曲线
       - 与过渡一致
     - animation-fill-mode填充模式
-      - none结束后和开始前无残留（默认）
+      - none结束后和开始前无残留
       - forwards结束后保留最后一帧画面
-      - backwards开始前保留最后一帧画面
+      - backwards开始前保留最后一帧画面（默认）
       - both开始前和结束后均保留
+    - 简写
+      - animation：动画名称 持续时间 运动曲线 何时开始 播放次数 是否反方向 动画起始或者结束的状态;
 
   ### 图像变换
 
@@ -1655,7 +1670,8 @@
 
   #### 混合模式
 
-  - mix-blend-mode属性<img src="../../../AppData/Roaming/Typora/media/IMG_20221228_155139.jpg" alt="IMG_20221228_155139" style="zoom:25%;" />
+  - mix-blend-mode属性
+  - <img src="../media/IMG_20221228_155139.jpg" alt="IMG_20221228_155139" style="zoom: 25%;" />
 
   #### 裁剪
 
@@ -1706,7 +1722,7 @@
 
   - 大小为0的盒子在一边增加边框就是一个三角形（四分之一正方形）
 
-    - <img src="../../../AppData/Roaming/Typora/media/Snipaste_2023-01-01_20-54-38.png" alt="Snipaste_2023-01-01_20-54-38" style="zoom:33%;" />
+    - <img src="../media/Snipaste_2023-01-01_20-54-38.png" alt="Snipaste_2023-01-01_20-54-38" style="zoom:33%;" />
 
   - ```css
     div {
@@ -1723,7 +1739,7 @@
 
   - cursor属性设置鼠标样式
     - 设置在对象上移动的鼠标指针采用何种系统预定义的光标形状
-    - <img src="../../../AppData/Roaming/Typora/media/Snipaste_2023-01-01_21-02-06.png" alt="Snipaste_2023-01-01_21-02-06" style="zoom:50%;" />
+    - <img src="../media/Snipaste_2023-01-01_21-02-06.png" alt="Snipaste_2023-01-01_21-02-06" style="zoom:50%;" />
   - 表单轮廓线
     - 去掉选中输入框时的效果`input {outline: none; }`
   - 防止用户拖动调整文本域的大小
@@ -1777,3 +1793,10 @@
     - 使用切片工具（在裁剪的选项中），选择区域后导出存储为web所用格式，导出选中的切片
 
   - 使用cutterman插件
+
+### 常用模块类名
+
+<img src="../media/Snipaste_2023-01-02_19-16-57.png" alt="Snipaste_2023-01-02_19-16-57" style="zoom: 50%;" />
+
+# 移动端开发
+

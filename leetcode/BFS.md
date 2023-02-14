@@ -10,6 +10,8 @@
 
 - [286. 墙与门 ](https://leetcode.cn/problems/walls-and-gates/)
 
+- [301. 删除无效的括号 ](https://leetcode.cn/problems/remove-invalid-parentheses/submissions/)
+  - 特殊，用queue超时，每到一层先直接检查所有元素，用两个set存储方便遍历
   
 
 ### 1.（难）与状态压缩结合，多维特殊BFS（如可以重复访问点，那么需要其他（高维）判断方法来防止循环）

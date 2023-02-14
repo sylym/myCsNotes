@@ -1,7 +1,11 @@
 # stl
-# 容器
-## set
-### 使用
+
+## 容器
+
+### set
+
+#### 使用
+
 - （技巧）用set实现自定义比较
     - 打包为自定义数据结构，自定义比较即可
 - set的迭代器不支持许多操作，可以用以下方法操作
@@ -17,7 +21,8 @@ struct Node {
 };
 set<Node> S;//就会按照自定义比较规则进行排序。
 ```
-## map
+### map
+
 - 自定义比较：
 - 二分成员函数：
     - [1146. 快照数组](https://leetcode.cn/problems/snapshot-array/submissions/)
@@ -59,7 +64,7 @@ function<bool(vector<int>&,vector<int>&)> cmp=[](vector<int>&a,vector<int>&b)->b
         };
 priority_queue<vector<int>,vector<vector<int>>,decltype(cmp)> q(cmp);//小顶堆
 ```
-# 模板（泛型）
+## 模板（泛型）
 
 ### function
 - function是一个通用的多态函数包装器，可以调用普通函数、Lambda函数、仿函数、bind对象、类的成员函数和指向数据成员的指针，function定义在名为function.h头文件中。
@@ -88,5 +93,17 @@ function<void(int)> dfs = [&](int i) {
 };
 dfs(0);
 ```
-# 算法
-## 二分搜索
+## 算法
+### iota
+- 用于产生连续值
+- 该函数位于头文件`#include <numeric>`中。
+- `，iota(begin,end,n)`
+    - begin，end为迭代器开始和结束的位置，n为起始元素，自动依次++填充
+
+### 二分搜索
+- `lower_bound(begin,end,num)``upper_bound()`
+- 对可以随机访问的有序容器操作的复杂度为O（logn）对于不可以随机访问的如（set）为O（n）
+- set使用成员函数`set.upper_bound`复杂度为O（logn）
+## 数学
+
+- `ceil(double)`对小数向上取整

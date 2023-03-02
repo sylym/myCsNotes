@@ -41,6 +41,7 @@
     - xxx/ 忽略一个文件夹
     - xxx/*.a 忽略文件夹中的一类文件,但不忽略子文件夹中的
     - xxx/\**/\*.a 全部忽略
+    - /xxx忽略根目录下文件/文件夹
 - git commit 暂存区->本地仓库
   - git commit -m ‘注释’
 - git status 检查文件状态
@@ -61,7 +62,6 @@
 - gti branch xxx 新建分支
 - git branch -d 删除分支（-D强制删除）
   - 切换到别的分支才能删除当前分支
-
 - git checkout xxx 切换分支
 
   - git checkout -b xxx 如果分支不存在则会自动创建
@@ -69,8 +69,20 @@
   - 一次只能对一个分支进行操作
   - 不同分支可能处于不同的版本
   - head->指向当前的分支
-
 - git merge xxx 把其它分支合并到当前的分支上 
+- git rebase xxx 另一种合并分支的方法，把一个分支直接移动到另一个分支的末端，使得并行开发的任务看起来像线性先后开发的
+  - 把当前分支移动到xxx目标分支上
+
+
+### head指针
+
+- 默认情况下head指针指向当前分支的最新节点
+- `git checkout HEAD^`表示向上移动一个节点
+  - ~n 表示向上移动n个节点
+- 移动分支指向：`git brunch -f master HEAD~3`
+  - 将master分支以到HEAD上3个点的位置
+- 撤销提交：`git reset HEAD^1`
+  - `git revert`:用于对已经上传的修改进行撤销，即创建一个与修改前内容完全相同的新分支
 
 ### 分支冲突
 

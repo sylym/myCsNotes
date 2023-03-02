@@ -140,6 +140,7 @@
     - root用户 输入visudo 打开/etc/sudoers
     - 在文件最后添加`username ALL=(ALL) NOPASSWD: ALL`
 
+- passed 修改密码
 - 用户与用户组
   - 可以配置多个用户、用户组
   - 一个用户可以加入多个用户组

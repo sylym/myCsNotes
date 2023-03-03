@@ -17,7 +17,7 @@
 
 - 退出虚拟环境`conda activate`
 
-- 删除虚拟环境`conda remove --name env_name --all`
+- 删除虚拟环境`conda env remove -n env_name`
 
   - 删除包`conda remove --name env_name package_name`
 

@@ -30,7 +30,7 @@
 
 ## 基础操作
 
- ![](../media/QQ截图20221125101245.png)
+ ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/20221125101245.png)
 
 - git add 工作区->暂存区
   - git add xxx 添加单个文件可以用|来添加多个文件
@@ -88,7 +88,7 @@
 
 - 比如两个分支对同一文件同一处进行了 不同修改，那么合并时就会失败
 
-  <img src="../media/QQ截图20221125111646.png" style="zoom:50%;" />
+  ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/20221125111646.png)
 
   - git会在文件中保存两个文件的共同信息，需要手动选择
   - 对文件修改完成，解决冲突后再次add 并commit
@@ -101,7 +101,7 @@
   - hotfix修复分支（修复bug）
   - feature hotfix用后可以删除
 
-  ![](../media/QQ截图20221125112416.png)
+  ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/20221125112416.png)
 
 ## 远程仓库
 
@@ -149,5 +149,5 @@
 - 解决冲突后再add，commit即可
   - 可以直接 git commit (不-m)然后直接wq
 
-## ide中使用
+## ide中使用（待补充）
 

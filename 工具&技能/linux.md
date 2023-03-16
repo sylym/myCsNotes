@@ -37,8 +37,8 @@
   - 相对路径：以当前路径为起点
 
   - 特殊路径符
-    - .表示当前目录 cd ./Desktop等价于cd Desktop
-    - ..表示上一级目录 cd ..返回上一级目录 cd../..上两级
+    - **.表示当前目录** cd ./Desktop等价于cd Desktop
+    - **..表示上一级目录** cd ..返回上一级目录 cd../..上两级
     - ~ HOME目录
 
 - 通配符
@@ -52,9 +52,9 @@
   - 如查找文件 ls xx | grep xx
   - 嵌套使用xx|xx|xx|...依次向右传递
 
-- ctrl+c 强制停止命令的执行
+- **ctrl+c 强制停止**命令的执行
 
-### 文件命令
+### 文件命令类似
 
 - ls [-a -l -h] [linux路径]
   - 省缺参数时直接列出当前工作目录下的内容
@@ -64,7 +64,7 @@
     - -h 与l一起用，-hl以kb/mb等显示文件大小
 - cd [linux路径] 切换工作目录
   - 省缺参数默认为home路径
-- pwd 输出当前工作目录
+- pwd 输出当前工作目录（查看当前所处的位置）
 - mkdir [-p] linux路径 新建文件夹
   - -p自动创建不存在的父目录，即连续创建多级目录
   - 创建文件需要修改权限，HOME文件夹外无法成功
@@ -95,11 +95,11 @@
   - 默认输出 行数+单词数+字节数
   - 文件路径，要统计内容的文件，可作为内容输入端口
 
-- which 要查找的命令
+- which 要查找的命令（用于查找环境变量下的命令）
   - 命令如ls本质上是一个个程序
   - which用于查看which的程序文件在哪里
 
-- find 起始路径 -name “名称”
+- find 起始路径 -name(查找方式) “名称”（用于查找文件）
   - 可以结合，通配符使用
   - find 起始路径 -size +(-)n[单位] ，按照文件的大小查找
     - \+\-表示大于和小于
@@ -138,8 +138,7 @@
   - 为一条命令赋予root权限
   - 只有被sudo认真的用户才能使用sudo命令
     - root用户 输入visudo 打开/etc/sudoers
-    - 在文件最后添加`username ALL=(ALL) NOPASSWD: ALL`
-
+    - 在文件最后添加`username（用户名） ALL=(ALL) NOPASSWD: ALL`
 - passed 修改密码
 - 用户与用户组
   - 可以配置多个用户、用户组
@@ -164,4 +163,30 @@
   - getent group查看组的信息
     - test: x:1001:thdlrt
     - 组名：组认证：id
-- 权限控制
+
+#### 文件权限控制
+
+- <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/image-20230316191457164.png" alt="image-20230316191457164" style="zoom: 60%;" />
+- <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/image-20230316191824148.png" alt="image-20230316191824148" style="zoom:50%;" />
+  - 首位表示文件类型。后面每三位表示一种用户的权限
+    - r：读权限（查看文件内容；ls文件夹内容）
+    - w：写权限（修改文件；在文件夹内删除修改创建）
+    - x：执行权限（将文件作为程序执行；cd进入文件夹，作为工作目录）
+- chmod权限控制（只有文件的所属用户以及root用户才可以进修改）
+  - `chmod [-R] 权限 文件、文件夹`
+    - -R表示对文件夹内全部内容进行同样的操作
+    - `chmod u=rwx,g=rx,o=x hello.txt`分别对三种用户的权限进行修改（只写修改的即可,并且省略-）
+  - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/image-20230316193937027.png" alt="image-20230316193937027" style="zoom:50%;" />
+    - 用一位数字表示一种用户的权限状态，三个数字表示全部三种用户的权限
+    - 如`chmod 751 gello.txt`
+- chown修改文件拥有者/用户组
+  - `chown -R [用户][:][用户组] 文件/文件夹`
+    - -R对文件内全部文件执行相同的操作
+    - 可选修改用户以及用户组（用:分隔）
+  - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/image-20230316194413686.png" alt="image-20230316194413686" style="zoom: 50%;" />
+  - 只有root用户有权限执行这个命令
+
+## 实用操作
+
+- 
+

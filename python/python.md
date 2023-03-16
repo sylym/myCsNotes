@@ -210,6 +210,7 @@
 - 索引值-1指向最后一个元素，-2表示倒数第二个元素...
 - 末尾添加元素`append(val)`
   - 与del不同的的是pop会返回删除的内容
+  - `extend()`方法向一个列表的尾部追加另一个列表的所有元素。(等同于直接用+相加)
 - 插入元素`insert(p,val)`
 - 删除元素
   - `pop(i)`不填写参数时默认删除最后一个元素
@@ -329,6 +330,7 @@
   - 判断元素是否在列表中使用in关键字
     - 不在使用not in
   - elif表示else if
+- 三元运算符`maxNum = a if a > b else b`
 - while
   - `while a==num:`
   - `break` `continue`

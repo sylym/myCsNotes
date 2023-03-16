@@ -1,5 +1,17 @@
  # javascript语法基础
 
+## 使用
+
+- 一般写在最底部（一般再`/body`上面），保证html元素已经全部出现过，使脚本正确执行
+
+#### 内部形式
+
+- 直接写在script语句块内
+
+#### 外部形式
+
+- `<script src="demo.js"></script>`
+
 ## 输入输出
 
 - 输入
@@ -19,12 +31,12 @@
 - var声明有作用域限制，为函数作用域
   - 去掉var关键字直接声明变量可以实现在函数内声明全局变量
 - 可以一次声明多个变量，用逗号隔开
-- 所有变量声明都会被提升到函数开头，因此可以先使用变量，而声明写在后面
+- 所有变量声明都会被**提升**到函数开头，因此可以先使用变量，而声明写在后面
 
 ### let
 
 - 作用域为块作用域（如一个if语句内）（比如在for循环中应该使用let）
-- let声明不会被提升不能在声明语句之前使用变量
+- let声明**不会被提升**不能在声明语句之前使用变量
 - let不允许重复声明一个变量（var和let也不能同时声重复明）
 
 ### const
@@ -229,9 +241,9 @@
 - 获取毫秒数（从1970.1.1开始）(转化为数字时自动转化为毫秒数)
   - valueof()或getTime()或直接Date.now()静态成员
   - 时间做差可以得到毫秒
-  - <img src="../media/Snipaste_2023-01-03_22-25-30.png" alt="Snipaste_2023-01-03_22-25-30" style="zoom: 67%;" />
+  - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-03_22-25-30.png" alt="Snipaste_2023-01-03_22-25-30" style="zoom: 67%;" />
 - 格式化
-  - ![Snipaste_2023-01-03_21-44-28](../media/Snipaste_2023-01-03_21-44-28.png)
+  - ![Snipaste_2023-01-03_21-44-28](https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-03_21-44-28.png)
 
 ### 数组对象Array
 
@@ -363,9 +375,9 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 
 ### 简介
 
-![Snipaste_2023-01-03_23-11-19](../media/Snipaste_2023-01-03_23-11-19.png)
+![Snipaste_2023-01-03_23-11-19](https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-03_23-11-19.png)
 
-<img src="../media/notestream.png"  />
+<img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/notestream.png"  />
 
 - 先从上到下执行捕获，再从下到上执行冒泡，事件监听函数按照这个顺序依次执行
 
@@ -494,7 +506,7 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 
 - 鼠标事件 
 
-  - ![](../media/mouse.png)
+  - ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/mouse.png)
   
   - mouseenter和mouseover都在鼠标移动到元素上时触发，区别是mouseover在鼠标经过自身盒子时会触发，经过子盒子时会再次触发，而mouseenter只在经过自身盒子时触发（因为mouseenter不会冒泡）
 
@@ -534,7 +546,7 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
   - function内增加参数`function(event)`参数名称可以自定义不一定是event
   - 事件对象由系统自动创建不需要传递参数，是一系列与事件相关数据的集合
   - 属性：
-    - ![](../media/event.png)
+    - ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/event.png)
 
   - e.target是触发事件的对象，this是绑定事件的对象
   - 阻止默认行为：让链接不跳转或者提交按钮不提交
@@ -543,13 +555,13 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 
 - 鼠标事件对象属性
 
-  - <img src="../media/mouseevent.png" style="zoom: 67%;" />
+  - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/mouseevent.png" style="zoom: 67%;" />
   - client：坐标不会因为窗口滑动而变化，是相对目前看到的窗口的坐标
   - page：随滑动发生变化，是相对于整个文档页面最上端的距离
 
 - 键盘事件
 
-  -  执行顺序 down press up![](../media/keyevent.png)
+  -  执行顺序 down press up![](https://thdlrt.oss-cn-beijing.aliyuncs.com/keyevent.png)
     - keyup keydown不区分大小写（事件对象返回相同）keypress区分
 
   - 事件对象属性
@@ -569,7 +581,7 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 - 定义在全局作用域中的变量函数都会变为window对象的属性和方法
 - 是js访问浏览器窗口的接口
 
-<img src="../media/bom.png" style="zoom:67%;" />
+<img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/bom.png" style="zoom:67%;" />
 
 ### 事件
 
@@ -596,15 +608,15 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 ### location对象
 
 - 用于获取或设置窗体的url（统一资源定位符），并且可以用于解析url
-  - ![](../media/url.png)
+  - ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/url.png)
 
 - 属性：
-  - ![](../media/location.png)
+  - ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/location.png)
 
 - 通过url传递参数
   - 使用input提交按钮后表单数据会被保存在url的参数部分（使用form指定跳转地址，跳转后的网页可以通过html获取信息）
 - 方法
-  - ![](../media/lmethod.png)
+  - ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/lmethod.png)
   - assign()会记录历史可以实现后退功能被
 
 ### navigator对象
@@ -616,7 +628,7 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 
 - 与浏览器的历史记录进行交互
 - 方法(实际上就是模拟浏览器上的前景后退按钮)
-  - ![](../media/hmethod.png)
+  - ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/hmethod.png)
 
 ## 网页特效
 
@@ -626,17 +638,17 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
   - `offsetParent`：返回带有定位的父级元素（没有则返回播放body）
   - `offsetTop` `offsetLeft`：返回相对带有定位的父元素上、左方的偏移
   - `offsetWidth` `offsetHeight`：返回自身包括padding、边框、内容区的宽度、高度
-- ![](../media/offset.png)
+- ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/offset.png)
 
 ### 元素可视区client
 
 - 用于获取元素可视区的相关信息，如元素的边框大小，元素大小
-- ![](../media/client.png)
+- ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/client.png)
 
 ### 元素滚动scroll
 
 - 与滚动条有关系
-- ![](../media/scroll.png)
+- ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/scroll.png)
 
 - scroll是内容实际宽高，包括溢出的部分
 - 被卷去的部分指的是由于滚动条滚动被隐藏的部分
@@ -685,7 +697,7 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 
 ## 数据可视化
 
-- <img src="../media/echarts.png" style="zoom:80%;" />
+- <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/echarts.png" style="zoom:80%;" />
 
 ```javascript
 <!DOCTYPE html>
@@ -739,9 +751,9 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 ### 配置设置
 
 - [配置文档](https://echarts.apache.org/zh/option.html#title)
-- <img src="../media/ec.png" style="zoom: 67%;" />
+- <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/ec.png" style="zoom: 67%;" />
 
-- ![](../media/ttol.png)
+- ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/ttol.png)
 
 - color与serious后面跟数组`[]`其余后面跟对象`{}`
 
@@ -777,5 +789,5 @@ var 变量名=function(){}//法二（匿名函数）类似函数指针
 
 - js执行机制：先执行执行栈中的同步任务，把异步任务（回调函数）放入任务队列中，执行栈中的同步任务执行完成之后系统才会按次序执行任务队列中的异步任务，异步任务进入执行栈，开始执行
 
-![](../media/dif.png)
+![](https://thdlrt.oss-cn-beijing.aliyuncs.com/dif.png)
 

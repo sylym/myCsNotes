@@ -29,7 +29,7 @@
   - 只能内嵌行内元素
     - 链接内不能再放链接但是（a）可以内嵌块级元素
 
-![IMG_20221227_110427](../media/IMG_20221227_110427.jpg)
+![IMG_20221227_110427](https://thdlrt.oss-cn-beijing.aliyuncs.com/IMG_20221227_110427.jpg)
 
 #### 块级元素
 
@@ -40,7 +40,7 @@
   - 可以内嵌其他元素
     - 文字类元素不能内嵌块级元素，如p，h1内不能放div
 
-![IMG_20221227_110421](../media/IMG_20221227_110421.jpg)
+![IMG_20221227_110421](https://thdlrt.oss-cn-beijing.aliyuncs.com/IMG_20221227_110421.jpg)
 
 #### 行内块元素
 
@@ -120,7 +120,7 @@
     - media与style相同
     - href为链接文件的地址
     - rel属性
-    - ![](../media/16717852985051.jpg)
+    - ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/16717852985051.jpg)
 
 - `<base>`基准位置 
 
@@ -189,7 +189,7 @@
 - `<sub>`：以下标显示
   - sup上标显示
 - `<small>`：缩小显示
-- ![Snipaste_2023-01-01_22-47-10](../media/Snipaste_2023-01-01_22-47-10.png)
+- ![Snipaste_2023-01-01_22-47-10](https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-01_22-47-10.png)
 
 ### 结构
 
@@ -228,7 +228,7 @@
     </dl>
     ```
 
-    ![](../media/16717979251060.jpg)
+    ![](https://thdlrt.oss-cn-beijing.aliyuncs.com/16717979251060.jpg)
 
 - 可以使用css定义标记样式：list-style-type选择标记，list-style-image自定义图片
 
@@ -558,7 +558,7 @@
 
 ## 如何使用
 
-![](../media/16718747989552.jpg)
+![](https://thdlrt.oss-cn-beijing.aliyuncs.com/16718747989552.jpg)
 
 - 内联样式
   - html元素都有一个style属性，可以直接对其进行赋值
@@ -595,7 +595,7 @@
 
 - 当同一个元素指定多个选择器，就会有优先级的产生。选择器相同，则执行层叠性；选择器不同，则根据选择器权重执行
 
-![Snipaste_2022-12-30_14-20-59](../media/Snipaste_2022-12-30_14-20-59.png)
+![Snipaste_2022-12-30_14-20-59](https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2022-12-30_14-20-59.png)
 
 - 数字1越靠左权重越高
   - 对于复合迭代器权重相加，如body h1#myID权重为（1，0，2）
@@ -708,7 +708,7 @@
     - odd奇数even偶数
   - 还可以填入公式
     - :nth-child(n)：n从0开始每次加一（如果填入n会选择全部子元素）
-    - <img src="../media/Snipaste_2023-01-01_23-22-40.png" alt="Snipaste_2023-01-01_23-22-40" style="zoom: 67%;" />
+    - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-01_23-22-40.png" alt="Snipaste_2023-01-01_23-22-40" style="zoom: 67%;" />
 - `:nth-last-child()`：逆向
 - `child`替换为`of-type`：匹配父元素下唯一指定类型的子元素
   - 如`p:first-of-child`作为父元素下第一个p元素的元素（p中的第一个）
@@ -796,7 +796,7 @@
 
 - 外边距（边框与其他元素间的空白区域）-边框-内边距（内容与边框间的空白区域）-内容
 
-![box-model](../media/box-model.gif)
+![box-model](https://thdlrt.oss-cn-beijing.aliyuncs.com/box-model.gif)
 
 #### 边框
 
@@ -1522,7 +1522,7 @@
   - linear gradient线性渐变
 
     - 需要指定渐变方向（默认为从上到下）、起始颜色、结束颜色：`linear-gradient(direction, red, blue)`
-      - <img src="../media/IMG_20221228_163150.jpg" alt="IMG_20221228_163150" style="zoom: 25%;" />
+      - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/IMG_20221228_163150.jpg" alt="IMG_20221228_163150" style="zoom: 25%;" />
 
     - 也可以指定多种颜色，会在渐变中均匀分配
       - 颜色后面添加百分值，定义颜色出现的位置，如blue20%表示接近宽度的20%时显示为蓝色
@@ -1562,7 +1562,7 @@
     - rotateX() rotateY() rotateZ() 表示沿xyz轴旋转
       - 角度单位deg
     - rotate3D(1, 1, 1, 80deg)前三个参数表示沿不同反向的旋转分量，第四个参数表示旋转角度
-    - ![Snipaste_2023-01-03_15-32-41](../media/Snipaste_2023-01-03_15-32-41.png)
+    - ![Snipaste_2023-01-03_15-32-41](https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-03_15-32-41.png)
   - 移动
     - translateX() translateY() translateZ()（设置了透视才能看到z轴移动的效果）
     - translate()缩写
@@ -1671,7 +1671,7 @@
   #### 混合模式
 
   - mix-blend-mode属性
-  - <img src="../media/IMG_20221228_155139.jpg" alt="IMG_20221228_155139" style="zoom: 25%;" />
+  - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/IMG_20221228_155139.jpg" alt="IMG_20221228_155139" style="zoom: 25%;" />
 
   #### 裁剪
 
@@ -1722,7 +1722,7 @@
 
   - 大小为0的盒子在一边增加边框就是一个三角形（四分之一正方形）
 
-    - <img src="../media/Snipaste_2023-01-01_20-54-38.png" alt="Snipaste_2023-01-01_20-54-38" style="zoom:33%;" />
+    - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-01_20-54-38.png" alt="Snipaste_2023-01-01_20-54-38" style="zoom:33%;" />
 
   - ```css
     div {
@@ -1739,7 +1739,7 @@
 
   - cursor属性设置鼠标样式
     - 设置在对象上移动的鼠标指针采用何种系统预定义的光标形状
-    - <img src="../media/Snipaste_2023-01-01_21-02-06.png" alt="Snipaste_2023-01-01_21-02-06" style="zoom:50%;" />
+    - <img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-01_21-02-06.png" alt="Snipaste_2023-01-01_21-02-06" style="zoom:50%;" />
   - 表单轮廓线
     - 去掉选中输入框时的效果`input {outline: none; }`
   - 防止用户拖动调整文本域的大小
@@ -1796,7 +1796,7 @@
 
 ### 常用模块类名
 
-<img src="../media/Snipaste_2023-01-02_19-16-57.png" alt="Snipaste_2023-01-02_19-16-57" style="zoom: 50%;" />
+<img src="https://thdlrt.oss-cn-beijing.aliyuncs.com/Snipaste_2023-01-02_19-16-57.png" alt="Snipaste_2023-01-02_19-16-57" style="zoom: 50%;" />
 
 # 移动端开发
 
